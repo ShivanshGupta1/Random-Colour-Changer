@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setInterval(myfunction, 1000)">Change Colour</button>
+    <br>
+    
+        
+   
+</body>
+<script>
+
+    function myfunction(){
+  
+    let x = Math.random()*256
+    let y = Math.random()*256
+    let z = Math.random()*256
+    let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+}
+
+</script>
+</html>
